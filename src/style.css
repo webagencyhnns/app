@@ -3,15 +3,26 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'MyFont';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     src: url('./font/roboto/Roboto-Italic.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
   }
+  
+  /* ------------------- Font -------------------- */
 
-
-.hello {
-    color: red;
-    font-family: 'Roboto';
-    background: url('./icon.png/opti.png');
+  .font-verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  /* ------------------- background --------------- */
+
+  .bg-gray {
+    background-color: #333;
+  }
+
+  /* ------------------- width and size ----------- */
+
+  /* .w-full	{
+    width: 100%;
+  } */

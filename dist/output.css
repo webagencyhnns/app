@@ -551,18 +551,83 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.m-auto {
+  margin: auto;
 }
 
-.text-blue-500 {
+.m-4 {
+  margin: 1rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.no-underline {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 @font-face {
-  font-family: 'MyFont';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   src: url('./font/roboto/Roboto-Italic.ttf') format('truetype');
 
@@ -571,8 +636,20 @@ video {
   font-style: normal;
 }
 
-.hello {
-  color: red;
-  font-family: 'Roboto';
-  background: url('./icon.png/opti.png');
+/* ------------------- Font -------------------- */
+
+.font-verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* ------------------- background --------------- */
+
+.bg-gray {
+  background-color: #333;
+}
+
+/* ------------------- width and size ----------- */
+
+/* .w-full	{
+    width: 100%;
+  } */
