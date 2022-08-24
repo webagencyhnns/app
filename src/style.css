@@ -21,6 +21,26 @@
     background-color: #333;
   }
 
+
+  .bg-gradient {
+    background: rgb(214,40,40);
+    background: linear-gradient(90deg, rgba(214,40,40,1) 0%, rgba(170,9,9,1) 32%, rgba(255,124,0,1) 100%);
+  }
+  /* ----------    --------------------------- */
+li::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  border-radius: 2px;
+  background: #aaa;
+  transition: width 0.2s ease-out;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
   /* ------------------- width and size ----------- */
 
   /* .w-full	{

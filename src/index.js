@@ -1,3 +1,6 @@
+import '@fortawesome/fontawesome-free/js/all'
+
+
 // import _ from 'lodash';
 // import './style.css';
 // import Icon from './icon.png/opti.png';
@@ -18,4 +21,9 @@
   
 //   document.body.appendChild(component());
 
-console.log("script ok");
+// let btn = document.getElementById("btn");
+// let p = document.getElementById('p');
+// btn.addEventListener("click", () => {
+//     document.body.classList.toggle('dark');
+//     p.classList.toggle('color');
+// })
