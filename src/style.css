@@ -21,13 +21,16 @@
     background-color: #333;
   }
 
+  .bg-white-300 {
+    background-color: #f1f1f1;
+  }
 
   .bg-gradient {
-    background: rgb(214,40,40);
-    background: linear-gradient(90deg, rgba(214,40,40,1) 0%, rgba(170,9,9,1) 32%, rgba(255,124,0,1) 100%);
+    background: rgb(209,40,214);
+    background: linear-gradient(90deg, rgba(209,40,214,1) 0%, rgba(240,172,230,1) 57%, rgba(228,145,169,1) 100%);
   }
   /* ----------    --------------------------- */
-li::after {
+.line::after {
   content: "";
   display: block;
   width: 0px;
@@ -37,7 +40,7 @@ li::after {
   transition: width 0.2s ease-out;
 }
 
-li:hover::after {
+.line:hover::after {
   width: 100%;
 }
 
@@ -46,3 +49,18 @@ li:hover::after {
   /* .w-full	{
     width: 100%;
   } */
+
+  /* ------------- Animation ----------------------- */
+
+  @keyframes spin {
+    100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+  }
+
+  .tourned {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+  }
+
+
+
