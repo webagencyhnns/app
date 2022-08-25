@@ -19,3 +19,13 @@
 //   document.body.appendChild(component());
 
 console.log("script ok");
+
+let button = document.getElementById("dark-mode");
+let body = document.querySelector("body");
+
+function darkMode() {
+   body.classList.toggle("bg-black");
+   body.classList.toggle("text-white");
+}
+
+button.addEventListener("click", darkMode);
