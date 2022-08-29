@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="style.css">
 <script defer src="/runtime.bundle.js"></script><script defer src="/main.bundle.js"></script></head>
 
-<body class="font-verdana">
+<body class="md:overflow-x-hidden lg:overflow-hidden xl:overflow-hidden font-verdana">
   <header class="bg-gray w-full h-auto">
-    <nav class="grid grid-cols-2 items-center ">
-      <img src="./img/logo-agence-eclair.png" alt="logo agence éclair" width="120px" height="h-auto">
-      <ul class=" flex flex-row justify-evenly list-none uppercase text-white  text-lg ">
-        <li>
-          <a class="no-underline line" href="#">Accueil</a>
+    <nav class="md:flex md:flex-row md:justify-evenly lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center ">
+      <img src="./img/logo-agence-eclair.png" alt="logo agence éclair" width="120px" height="h-auto" class="md:w-48">
+      <ul id="liste" class="md:hidden md:flex md:flex-row md:justify-evenly md:items-center lg:col-start-2 lg:col-end-4 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg list-none uppercase text-white   ">
+        <li> 
+          <a class="no-underline line " href="#">Accueil</a>
         </li>
         <li>
-          <a class="no-underline line" href="http://localhost:8080/services.html">Services</a>
+          <a class="no-underline line " href="http://localhost:8080/services.html">Services</a>
         </li>
         <li>
           <a class="no-underline line" href="#">nos réalisations</a>
@@ -29,32 +29,33 @@
           <a class="no-underline line" href="http://localhost:8080/contact.html">contact</a>
         </li>
       </ul>
+      <img src="./img/icons8-menu.svg" alt="menu hamburger" class=" md:w-20 self-center sm-inline-block  lg:hidden xl:hidden" id="menu" >
     </nav>
-    <div class="grid grid-cols-2 flex-row  text-white bg-gradient">
-      <div class="flex flex-col justify-center items-start pl-24">
-        <h3 class="uppercase text-2xl py-4">votre partenaire digital</h3>
-        <h1 class=" text-3xl">Agence web et communication digitale</h1>
-        <p class="uppercase text-lg py-8">Experts en communication digitale, nous prenons en main l’ensemble de vos
+    <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 lg:flex-row xl:grid xl:grid-cols-2 xl:flex-row  text-white bg-gradient">
+      <div class="lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24">
+        <h3 class="uppercase md:text-2xl md:py-4 md:text-2xl md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">votre partenaire digital</h3>
+        <h1 class=" md:text-3xl md:p-4 lg:text-3xl xl:text-3xl">Agence web et communication digitale</h1>
+        <p class="uppercase md:p-2 text-lg py-8">Experts en communication digitale, nous prenons en main l’ensemble de vos
           besoins web, de la création de
           votre site Internet, à la conception de votre stratégie digitale d’acquisition.</p>
       </div>
-      <div class=" flex flex-col justify-center items-center py-12">
+      <div class="md:p-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-12 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-12">
         <img class=" absolute tourned" src="./img/3d-planet-earth.png" alt="" width="450px" height="450px">
         <img class=" relative" src="./img/dog-astro-ideo.png" alt="dog astro" width="429px" height="475px">
       </div>
     </div>
   </header>
   <section class=" bg-slate-200">
-    <div class=" flex flex-col items-center py-8">
+    <div class="md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8">
       <h2 class=" capitalize text-4xl py-4 font-black">développement web</h2>
       <p class=" text-lg">Création de sites vitrines, sites marchands & d’applications web progressives
       </p>
     </div>
-    <div class=" grid grid-cols-2 ">
+    <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2  xl:grid xl:grid-cols-2 ">
 
-      <div class=" flex flex-col justify-center items-center">
-        <h2 class=" text-3xl font-black ">Création de site Web sur mesure</h2>
-        <p class=" w-2/3 py-4 pl-12 leading-8">Nous réalison des sites web qui convertissent ! En nous confiant la
+      <div class=" md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-center">
+        <h2 class="md:text-2xl md:p- xl:text-3xl font-black ">Création de site Web sur mesure</h2>
+        <p class=" md:p-6 md:leading-8 xl:w-2/3 xl:py-4 xl:pl-12 xl:leading-8">Nous réalison des sites web qui convertissent ! En nous confiant la
           réalisation de votre site
           internet, vous réaliserez un investissement. <br>la qualité de nos réalisations contribue pleinement au
           référencement naturel de
@@ -62,7 +63,7 @@
         </p>
 
       </div>
-      <div class=" my-8">
+      <div class="lg:my-8 xl:my-8">
         <img src="./img/site-sur-ordi.png" alt="site web sur ordi">
       </div>
     </div>

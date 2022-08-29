@@ -29,7 +29,7 @@
     background: rgb(209,40,214);
     background: linear-gradient(90deg, rgba(209,40,214,1) 0%, rgba(240,172,230,1) 57%, rgba(228,145,169,1) 100%);
   }
-  /* ----------    --------------------------- */
+  /* ---------- Underline --------------- */
 .line::after {
   content: "";
   display: block;
@@ -62,5 +62,24 @@
     animation: spin 20s linear infinite;
   }
 
+/* ---------- display -------------- */
+.sm-inline-block	{
+  display: inline-block;
+}
+.md-inline-block	{
+  display: inline-block;
+}
 
+/*----------- Responisive -----------*/
+
+@media screen and (max-width: 425px){
+  .sm-inline-block	{
+    display: inline-block;
+  }
+}
+
+/* --------- color -------------*/
+.icone-white {
+  color: #f1f1f1;
+}
 
