@@ -3,40 +3,37 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  entry: path.resolve(__dirname, "./src/app.js"),
   mode: "development",
-  entry: "./src/assets/index.js",
+  output: {
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/assets/",
+    clean: true,
+  },
   devtool: "inline-source-map",
   devServer: {
-    static: "./dist",
+    static: path.resolve(__dirname, "./dist"),
+  },
+  optimization: {
+    runtimeChunk: "single",
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
       filename: "index.html",
+    }),   
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/pages/home/index.html"),
+      filename: "services.html",
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, "./src/pages/contact/index.html"),
-    //   filename: "contact.html",
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, "./src/pages/services/index.html"),
-    //   filename: "services.html",
-    // }),
     new CopyPlugin({
       patterns: [
-        { from: "./src/assets/img/", to: "img" }
+        { from: "./src/assets/fonts/", to: "assets/fonts/" },
+        { from: "./src/assets/img/", to: "assets/img/" },
       ],
     }),
   ],
-  output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
-      clean: true,
-      publicPath: '/',
-  },
-  optimization: {
-    runtimeChunk: "single",
-  },
   module: {
     rules: [
       {
@@ -52,13 +49,15 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.(csv|tsv)$/i,
-        use: ["csv-loader"],
-      },
-      {
-        test: /\.xml$/i,
-        use: ["xml-loader"],
-      },
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
     ],
   },
 };
