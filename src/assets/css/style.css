@@ -13,6 +13,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.bg-white-10{
+  background-color: #f1f1f1;
+}
+
 .hello {
   color: red;
   font-family: "Roboto";
