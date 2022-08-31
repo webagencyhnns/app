@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <title>Web agency</title>
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="../../assets/css/output.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="md:overflow-x-hidden lg:overflow-x-hidden xl:overflow-x-hidden font-verdana">
   <header class="bg-gray w-full h-auto">
-    <nav class="  md:flex lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center ">
-      <img src="./img/logo-agence-eclair.png" alt="logo agence éclair" width="120px" height="60px" class="md:w-40 md:h-30">
-      <ul id="liste" class="md:flex md:items-center md:text-xl lg:col-start-2 lg:col-end-4 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg list-none uppercase text-white   ">
-        <li> 
-          <a class="no-underline line md:" href="#">Accueil</a>
+    <nav
+      class="  md:flex md:justify-evenly lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center ">
+      <img src="./assets/img/logo-agence-eclair.png" alt="logo agence éclair" width="120px" height="60px"
+        class="md:w-40 md:h-30">
+      <ul id="liste"
+        class=" md:flex md:justify-between md:grow md:p-4 md:items-center md:text-xl lg:col-start-2 lg:col-end-4 lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0 list-none uppercase text-white   ">
+        <li>
+          <a class="no-underline line md:p-0" href="#">Accueil</a>
         </li>
         <li>
           <a class="no-underline line " href="http://localhost:8080/services.html">Services</a>
@@ -28,34 +31,44 @@
         <li>
           <a class="no-underline line" href="http://localhost:8080/contact.html">contact</a>
         </li>
-        <img src="./img/icons8-menu.svg" alt="menu hamburger" class="md:w-20 md:ml-8 md:items-end md:justify-items-end sm-inline-block  lg:hidden xl:hidden" id="menu" >
       </ul>
+
+      <img src="./assets/img/icons8-menu.svg" alt="menu hamburger"
+        class="sm:inline-block md:w-20 md:items-end md:justify-items-end md:hidden  lg:hidden xl:hidden" id="menu">
     </nav>
-    <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 lg:flex-row xl:grid xl:grid-cols-2 xl:flex-row  text-white bg-gradient">
-      <div class="lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24">
-        <h3 class="uppercase md:text-2xl md:py-4 md:text-2xl md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">votre partenaire digital</h3>
+    <div
+      class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 lg:flex-row xl:grid xl:grid-cols-2 xl:flex-row  text-white bg-gradient">
+      <div
+        class="lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24">
+        <h3 class="uppercase md:text-2xl md:py-4 md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">votre partenaire
+          digital</h3>
         <h1 class=" md:text-3xl md:p-4 lg:text-3xl xl:text-3xl">Agence web et communication digitale</h1>
-        <p class="uppercase md:p-2 text-lg py-8">Experts en communication digitale, nous prenons en main l’ensemble de vos
+        <p class="uppercase md:p-2 text-lg py-8">Experts en communication digitale, nous prenons en main l’ensemble de
+          vos
           besoins web, de la création de
           votre site Internet, à la conception de votre stratégie digitale d’acquisition.</p>
       </div>
-      <div class="md:p-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-12 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-12">
-        <img class=" absolute tourned" src="./img/3d-planet-earth.png" alt="" width="450px" height="450px">
-        <img class=" relative" src="./img/dog-astro-ideo.png" alt="dog astro" width="429px" height="475px">
+      <div
+        class="md:p-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-12 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-12">
+        <img class=" absolute tourned" src="./assets/img/3d-planet-earth.png" alt="" width="450px" height="450px">
+        <img class=" relative" src="./assets/img/dog-astro-ideo.png" alt="dog astro" width="429px" height="475px">
       </div>
     </div>
   </header>
   <section class=" bg-slate-200">
-    <div class="md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8">
+    <div
+      class="md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8">
       <h2 class=" capitalize text-4xl py-4 font-black">développement web</h2>
       <p class=" text-lg">Création de sites vitrines, sites marchands & d’applications web progressives
       </p>
     </div>
     <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-2  xl:grid xl:grid-cols-2 ">
 
-      <div class=" md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-center">
+      <div
+        class=" md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-center">
         <h2 class="md:text-2xl md:p- xl:text-3xl font-black ">Création de site Web sur mesure</h2>
-        <p class=" md:p-6 md:leading-8 xl:w-2/3 xl:py-4 xl:pl-12 xl:leading-8">Nous réalison des sites web qui convertissent ! En nous confiant la
+        <p class=" md:p-6 md:leading-8 xl:w-2/3 xl:py-4 xl:pl-12 xl:leading-8">Nous réalison des sites web qui
+          convertissent ! En nous confiant la
           réalisation de votre site
           internet, vous réaliserez un investissement. <br>la qualité de nos réalisations contribue pleinement au
           référencement naturel de
@@ -64,7 +77,7 @@
 
       </div>
       <div class="lg:my-8 xl:my-8">
-        <img src="./img/site-sur-ordi.png" alt="site web sur ordi">
+        <img src="./assets/img/site-sur-ordi.png" alt="site web sur ordi">
       </div>
     </div>
   </section>

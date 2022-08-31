@@ -83,3 +83,11 @@
   color: #f1f1f1;
 }
 
+/* -------- Grid -------------- */
+@media screen and (maxwidth: 768px){
+  .md-grid-perso {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }  
+}
+
