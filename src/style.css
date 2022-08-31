@@ -25,10 +25,10 @@
     background-color: #f1f1f1;
   }
 
-  .bg-gradient {
+  /* .bg-gradient {
     background: rgb(209,40,214);
     background: linear-gradient(90deg, rgba(209,40,214,1) 0%, rgba(240,172,230,1) 57%, rgba(228,145,169,1) 100%);
-  }
+  } */
   /* ---------- Underline --------------- */
 .line::after {
   content: "";
@@ -79,15 +79,14 @@
 }
 
 /* --------- color -------------*/
-.icone-white {
+/* .icone-white {
   color: #f1f1f1;
-}
+} */
 
 /* -------- Grid -------------- */
-@media screen and (maxwidth: 768px){
-  .md-grid-perso {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
+/* @media screen and (max-width: 640px){
+  .sm-block {
+    display: block;
   }  
-}
+} */
 
