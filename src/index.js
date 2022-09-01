@@ -27,5 +27,5 @@ import '@fortawesome/fontawesome-free/js/all'
 //     document.body.classList.toggle('dark');
 //     p.classList.toggle('color');
 // })
-import Menu from './component/menu';
-Menu();
+// import Menu from './component/menu';
+// Menu();
