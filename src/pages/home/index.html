@@ -1,99 +1,140 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/output.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Web agency</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/output.css" />
-  <link rel="stylesheet" href="../../style.css" />
-  <title>Web agency</title>
+  <body class="overflow-x-hidden font-verdana">
+    <header class="bg-gradient-to-b from-gray-500 via-gray-700 to-gray-500">
+      <nav
+        class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center"
+      >
+        <img
+          src="./assets/img/Logo-eclair.png"
+          alt="logo agence éclair"
+          class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0"
+        />
 
-</head>
-
-<body class="overflow-x-hidden font-verdana">
-  <header class="bg-gradient-to-b from-gray-500 via-gray-700 to-gray-500">
-    <nav
-      class="w-full h-auto z-10 md:flex md:justify-evenly lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center ">
-      <img src="./assets/img/logo-agence-eclair.png" alt="logo agence éclair" class="sm:hidden md:block md:w-40 md:h-30 lg:block" />
+        <div
+          class="z-30 sm:w-full sm:h-20 relative left-4 top-6 sm:block md:hidden lg:hidden xl:hidden cursor-pointe"
+          role="button"
+          id="menu"
+        >
+          <img
+            src="./assets/img/icons8-menu.svg"
+            alt="menu hamburger"
+            width="20px"
+            height="40px"
+            class="w-10 block"
+          />
+        </div>
+        <div class="lg:col-start-2 lg:col-end-4 md:block" id="liste">
+          <ul
+            class="sm:flex sm:flex-col sm:items-center z-20 sm:h-auto md:flex md:flex-row md:justify-evenly md:items-center md:p-4 md:text-xs lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0 list-none uppercase text-white"
+          >
+            <div
+              class="sm:w-full sm:border-b-2 sm:mb-4 md:hidden lg:hidden xl:hidden"
+            ></div>
+            <li class="li-nav">
+              <a class="no-underline line" href="#">Accueil</a>
+            </li>
+            <li class="sm:py-4 li-nav">
+              <a
+                class="no-underline line"
+                href="http://localhost:8080/services.html"
+                >Services</a
+              >
+            </li>
+            <li class="li-nav">
+              <a class="no-underline line" href="#">nos réalisations</a>
+            </li>
+            <li class="sm:py-4 md:p-0 li-nav">
+              <a class="no-underline line" href="#">boutique</a>
+            </li>
+            <li class="sm:pb-4 md:p-0 li-nav">
+              <a
+                class="no-underline line"
+                href="http://localhost:8080/contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="flex flex-col md:grid md:grid-cols-2 text-white bg-gradient-to-b from-indigo-300 via-purple-500 to-pink-100"
+    >
       <div
-        class="md:w-20 z-30 md:items-end md:justify-items-end absolute left-4 top-6 sm:block md:hidden  lg:hidden xl:hidden cursor-pointer ">
-        <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px" id="menu"
-          class="block w-10" />
-      </div>
-      
-      <div class="sm:border-b-2 sm:border-solid sm:border-slate-50 ">
-    </div>
-      <ul id="liste"
-      class="sm:flex sm:flex-col sm:justify-center sm:items-center sm:relative sm:pt-20 z-20  sm:h-auto md:flex md:flex-row md:justify-around md:items-center md:p-4 md:text-xs lg:col-start-2 lg:col-end-4 lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0 list-none uppercase text-white">
-        <li>
-          <a class="no-underline line" href="#">Accueil</a>
-        </li>
-        <li>
-          <a class="no-underline line" href="http://localhost:8080/services.html">Services</a>
-        </li>
-        <li>
-          <a class="no-underline line" href="#">nos réalisations</a>
-        </li>
-        <li>
-          <a class="no-underline line" href="#">boutique</a>
-        </li>
-        <li>
-          <a class="no-underline line" href="http://localhost:8080/contact.html">contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div
-    class="flex flex-col md:grid md:grid-cols-2 text-white bg-gradient-to-b from-indigo-300 via-purple-500 to-pink-100">
-    <div
-      class="lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24">
-      <h3 class="uppercase md:text-2xl md:py-4 md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">
-        votre partenaire digital
-      </h3>
-      <h1 class="md:text-2xl md:p-4 lg:text-3xl xl:text-3xl">
-        Agence web et communication digitale
-      </h1>
-      <p class="uppercase md:p-4 text-lg py-8">
-        Experts en communication digitale, nous prenons en main l’ensemble de
-        vos besoins web, de la création de votre site Internet, à la
-        conception de votre stratégie digitale d’acquisition.
-      </p>
-    </div>
-    <div
-      class="md:p-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-12 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-12">
-      <img class="absolute tourned md:w-1/3 md:py-8 md:ml-8" src="./assets/img/3d-planet-earth.png" alt="" width="450px"
-        height="450px" />
-      <img class="relative md:w-2/3 md:py-4" src="./assets/img/dog-astro-ideo.png" alt="dog astro" width="429px"
-        height="475px" />
-    </div>
-  </div>
-  <section class="bg-slate-200">
-    <div
-      class="md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8">
-      <h2 class="capitalize text-4xl py-4 font-black">développement web</h2>
-      <p class="text-lg">
-        Création de sites vitrines, sites marchands & d’applications web
-        progressives
-      </p>
-    </div>
-    <div class="sm:flex sm:flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-2">
-      <div
-        class="md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-center">
-        <h2 class="md:text-2xl md:p-4 xl:text-3xl font-black">
-          Création de site Web sur mesure
-        </h2>
-        <p class="md:p-6 md:leading-8 xl:w-2/3 xl:py-4 xl:pl-12 xl:leading-8">
-          Nous réalison des sites web qui convertissent ! En nous confiant la
-          réalisation de votre site internet, vous réaliserez un
-          investissement. <br />la qualité de nos réalisations contribue
-          pleinement au référencement naturel de votre site (SEO).
+        class="sm:flex sm:flex-col sm:items-center lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24"
+      >
+        <h3
+          class="uppercase md:text-2xl md:py-4 md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4"
+        >
+          votre partenaire digital
+        </h3>
+        <h1 class="md:text-2xl md:p-4 lg:text-3xl xl:text-3xl">
+          Agence web et communication digitale
+        </h1>
+        <p class="uppercase md:p-4 text-lg py-8">
+          Experts en communication digitale, nous prenons en main l’ensemble de
+          vos besoins web, de la création de votre site Internet, à la
+          conception de votre stratégie digitale d’acquisition.
         </p>
       </div>
-      <div class="lg:my-8 xl:my-8">
-        <img src="./assets/img/site-sur-ordi.png" alt="site web sur ordi" />
+      <div
+        class="md:p-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-12 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-12"
+      >
+        <img
+          class="absolute tourned md:w-1/3 md:py-8 md:ml-8"
+          src="./assets/img/3d-planet-earth.png"
+          alt=""
+          width="450px"
+          height="450px"
+        />
+        <img
+          class="relative md:w-2/3 md:py-4"
+          src="./assets/img/dog-astro-ideo.png"
+          alt="dog astro"
+          width="429px"
+          height="475px"
+        />
       </div>
     </div>
-  </section>
-</body>
-
+    <section class="bg-slate-200">
+      <div
+        class="md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8"
+      >
+        <h2 class="capitalize text-4xl py-4 font-black">développement web</h2>
+        <p class="text-lg">
+          Création de sites vitrines, sites marchands & d’applications web
+          progressives
+        </p>
+      </div>
+      <div
+        class="sm:flex sm:flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-2"
+      >
+        <div
+          class="md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-center"
+        >
+          <h2 class="md:text-2xl md:p-4 xl:text-3xl font-black">
+            Création de site Web sur mesure
+          </h2>
+          <p class="md:p-6 md:leading-8 xl:w-2/3 xl:py-4 xl:pl-12 xl:leading-8">
+            Nous réalison des sites web qui convertissent ! En nous confiant la
+            réalisation de votre site internet, vous réaliserez un
+            investissement. <br />la qualité de nos réalisations contribue
+            pleinement au référencement naturel de votre site (SEO).
+          </p>
+        </div>
+        <div class="lg:my-8 xl:my-8">
+          <img src="./assets/img/site-sur-ordi.png" alt="site web sur ordi" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

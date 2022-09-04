@@ -21,11 +21,20 @@ import '@fortawesome/fontawesome-free/js/all'
   
 //   document.body.appendChild(component());
 
-// let btn = document.getElementById("btn");
-// let p = document.getElementById('p');
-// btn.addEventListener("click", () => {
-//     document.body.classList.toggle('dark');
-//     p.classList.toggle('color');
-// })
+const menu = document.getElementById("menu");
+const liste = document.getElementById('liste');
+menu.addEventListener("click", () => {
+   liste.classList.toggle('hidden');
+    // p.classList.toggle('color');
+})
+
+const allLinks = document.querySelectorAll('.li-nav');
+
+allLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        liste.classList.toggle('hidden'); 
+    })
+})
+// console.log(menu, liste);
 // import Menu from './component/menu';
 // Menu();
