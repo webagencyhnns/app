@@ -28,4 +28,4 @@ function darkMode() {
    body.classList.toggle("text-white");
 }
 
-button.addEventListener("click", darkMode);
+// button.addEventListener("click", darkMode);
