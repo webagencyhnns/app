@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/output.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Contact</title>
+  <script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
+  <body class="font-verdana bg-slate-100 overflow-x-hidden w-full max-h-screen">
+    <h2 class="text-gray-600 font-normal py-16 text-center sm:text-2xl md:text-4xl">
+      <strong>Rentrons</strong> en contact
+    </h2>
+    <div class="flex flex-col justify-center items-center">
+      <form class="w-2/3">
+        <div class="relative mb-11">
+          <label for="prenom" class="text-gray-500 text-xl"
+            >Entrez votre prénom</label
+          >
+          <input
+            type="text"
+            placeholder="Prénom"
+            required
+            id="prenom"
+            class="text-gray-300 block w-full py-3 border-none outline-none bg-color-none text-lg"
+          />
+        </div>
+        <div class="relative mb-11">
+          <label for="nom" class="text-gray-500 text-xl"
+            >Entrez votre nom</label
+          >
+          <input
+            type="text"
+            placeholder="Nom"
+            required
+            id="nom"
+            class="text-gray-100 block w-full py-3 border-none outline-none bg-color-none text-lg"
+          />
+        </div>
+        <div class="relative mb-11">
+          <label for="mail" class="text-gray-500 text-xl"
+            >Entrez votre mail</label
+          >
+          <input
+            type="email"
+            name=""
+            id="mail"
+            placeholder="Votre adresse mail"
+            class="block w-full py-3 border-none outline-none bg-color-none text-lg text-gray-50"
+          />
+        </div>
+        <div class="relative mb-11">
+          <textarea
+            id="txt"
+            placeholder="Votre message"
+            required
+            class="w-full h-48 border-none rounded-md p-2 resize-none outline-none text-xl bg-white"
+          ></textarea>
+        </div>
+        <div class="relative mb-12">
+          <button
+            type="submit"
+            class="text-gray-400 py-4 border-solid border-4 rounded-full transition-all duration-500 px-16 block w-auto bg-img-gradient bg-200% bg-white sm:text-lg md:text-2xl font-medium hover:text-white hover:bg-100% hover:border-solid hover:border-4 hover:border-slate-100"
+          >
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
