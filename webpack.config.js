@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -13,12 +14,19 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"),
       filename: "index.html",
     }),
+
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/assets/img/", to: "./assets/img" },
+        { from: "./src/assets/fonts/", to: "./assets/fonts" },
+      ],
+    }),
   ],
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-      clean: true,
-      publicPath: '/',
+    publicPath: '/assets/',
+    clean: true,
   },
   optimization: {
     runtimeChunk: "single",
