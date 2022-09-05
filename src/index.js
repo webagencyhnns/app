@@ -1,3 +1,5 @@
+import '@fortawesome/fontawesome-free/js/all';
+
 // import _ from 'lodash';
 // import './style.css';
 // import Icon from './icon.png/opti.png';

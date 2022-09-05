@@ -551,6 +551,15 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
+.no-underline {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 @font-face {
   font-family: 'MyFont';
 
@@ -561,8 +570,8 @@ video {
   font-style: normal;
 }
 
-.hello {
-  color: red;
-  font-family: 'Roboto';
-  background: url('./icon.png/opti.png');
-}
+/* .font {
+    color: red;
+    font-family: 'Roboto';
+    background: url('./icon.png/opti.png');
+  } */
