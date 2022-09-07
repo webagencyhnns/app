@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/js/all'
 
 // function component() {
 //     const element = document.createElement('div');
-  
+
 //     // Lodash, currently included via a script, is required for this line to work
 //     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 //     element.classList.add('hello');
@@ -18,7 +18,7 @@ import '@fortawesome/fontawesome-free/js/all'
 //   element.appendChild(myIcon);
 //     return element;
 //   }
-  
+
 //   document.body.appendChild(component());
 
 const menu = document.getElementById("menu");

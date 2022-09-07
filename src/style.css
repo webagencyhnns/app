@@ -35,7 +35,7 @@
   }
 
   /* ---------- Underline --------------- */
-.line::after {
+/* .line::after {
   content: "";
   display: block;
   width: 0px;
@@ -47,11 +47,11 @@
 
 .line:hover::after {
   width: 100%;
-}
+} */
 
   /* ------------- Animation ----------------------- */
 
-  @keyframes spin {
+  /* @keyframes spin {
     100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
   }
 
@@ -59,7 +59,7 @@
     -webkit-animation: spin 20s linear infinite;
     -moz-animation: spin 20s linear infinite;
     animation: spin 20s linear infinite;
-  }
+  } */
 
 /* --------- color -------------*/
 /* .icone-white {

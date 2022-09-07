@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  entry: path.resolve(__dirname, "./src/app.js"),
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/app.js",
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
@@ -26,6 +27,7 @@ module.exports = {
       patterns: [
         { from: "./src/assets/img/", to: "./assets/img" },
         { from: "./src/assets/fonts/", to: "./assets/fonts" },
+        { from: "./src/style.css", to: "./assets/css/" },
       ],
     }),
   ],
@@ -53,12 +55,14 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.(csv|tsv)$/i,
-        use: ["csv-loader"],
-      },
-      {
-        test: /\.xml$/i,
-        use: ["xml-loader"],
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
     ],
   },
