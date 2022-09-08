@@ -25,17 +25,15 @@
   .bg-white-300 {
     background-color: #f1f1f1;
   }
-  .bg-color-none {
+  /* .bg-color-none {
     background: none;
     border-bottom: 3px solid #aaa;
     color: #666;
-  }
-  .bg-img-gradient {
-    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
-  }
+  } */
+ 
 
   /* ---------- Underline --------------- */
-/* .line::after {
+.line::after {
   content: "";
   display: block;
   width: 0px;
@@ -47,7 +45,7 @@
 
 .line:hover::after {
   width: 100%;
-} */
+}
 
   /* ------------- Animation ----------------------- */
 
