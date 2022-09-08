@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./font/roboto/Roboto-Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-white-10{
+  background-color: #f1f1f1;
+}
+
+.hello {
+  color: red;
+  font-family: "Roboto";
+  background: url("./icon.png/opti.png");
+}
+
+.test--blue {
+  color: blue;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red-titre {
+  color: #de1769;
+}
+
+.text-black {
+  color: #333333;
+}
