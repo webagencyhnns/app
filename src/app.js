@@ -1,5 +1,7 @@
 import '@fortawesome/fontawesome-free/js/all'
-
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+  }
 
 // import _ from 'lodash';
 // import './style.css';

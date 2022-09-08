@@ -4,12 +4,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/app.js"),
-  mode: "development",
-  entry: "./src/app.js",
-  devtool: "inline-source-map",
-  devServer: {
-    static: "./dist",
-  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/pages/home/index.html"),
@@ -33,8 +27,7 @@ module.exports = {
   ],
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/assets/",
+    path: path.resolve(__dirname, "./dist"),
     clean: true,
   },
   optimization: {

@@ -6,19 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p start:**",
-    "start:watch": "webpack --watch",
-    "start:serve": "webpack serve --open",
+    "start:serve": "webpack serve --open --config webpack.dev.js",
     "start:tailwind": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/assets/css/output.css --watch",
     "server": "node server.js",
-    "build": "webpack"
+    "build": "run-s build:**",
+    "build:webpack": "webpack --config webpack.prod.js",
+    "build:tailwind": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/assets/css/output.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
+    "@fortawesome/fontawesome-free": "^6.2.0",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
@@ -31,6 +32,7 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-middleware": "^5.3.3",
     "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0",
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
