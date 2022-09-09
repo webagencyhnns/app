@@ -25,7 +25,7 @@ const optionsRobot = {
       cleanParam: "ref /articles/",
     },
   ],
-  sitemap: "https://main--agence-eclair.netlify.app/",
+  sitemap: "https://agence-eclair.netlify.app/",
   host: "https://www.netlify.com/",
 };
 
