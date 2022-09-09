@@ -1,6 +1,33 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const RobotstxtPlugin = require("robotstxt-webpack-plugin");
+const robotstxt = require("generate-robotstxt");
+const optionsRobot = {
+  policy: [
+    {
+      userAgent: "Googlebot",
+      allow: "/",
+      disallow: "/search",
+      crawlDelay: 2,
+    },
+    {
+      userAgent: "OtherBot",
+      allow: ["/allow-for-all-bots", "/allow-only-for-other-bot"],
+      disallow: ["/admin", "/login"],
+      crawlDelay: 2,
+    },
+    {
+      userAgent: "*",
+      allow: "/",
+      disallow: "/search",
+      crawlDelay: 10,
+      cleanParam: "ref /articles/",
+    },
+  ],
+  sitemap: "https://main--agence-eclair.netlify.app/",
+  host: "https://www.netlify.com/",
+};
 
 module.exports = {
   entry: path.resolve(__dirname, "./src/app.js"),
@@ -24,6 +51,7 @@ module.exports = {
         { from: "./src/style.css", to: "./assets/css/" },
       ],
     }),
+    new RobotstxtPlugin(optionsRobot),
   ],
   output: {
     filename: "[name].bundle.js",
