@@ -13,28 +13,40 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.bg-white-10{
-  background-color: #f1f1f1;
+/* --------- underline ----------- */
+
+.line::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  border-radius: 2px;
+  background: #aaa;
+  transition: width 0.2s ease-out;
 }
 
-.hello {
-  color: red;
-  font-family: "Roboto";
-  background: url("./icon.png/opti.png");
+.line:hover::after {
+  width: 100%;
+}
+/* -------- Button Envoyer ------- */
+
+.btn-envoyer {
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid rgb(144,144,144);
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+  background-size: 200%;
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
-.test--blue {
-  color: blue;
-}
-
-.text-white {
-  color: white;
-}
-
-.text-red-titre {
-  color: #de1769;
-}
-
-.text-black {
-  color: #333333;
+.btn-envoyer:hover {
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
 }

@@ -48,7 +48,7 @@ module.exports = {
       patterns: [
         { from: "./src/assets/img/", to: "./assets/img" },
         { from: "./src/assets/fonts/", to: "./assets/fonts" },
-        { from: "./src/style.css", to: "./assets/css/" },
+        { from: "./src/assets/css/style.css", to: "./assets/css/" },
       ],
     }),
     new RobotstxtPlugin(optionsRobot),
