@@ -28,7 +28,7 @@ Nawel
 
 ## Liens vers le projet
 
-https://main--agence-eclair.netlify.app/
+https://agence-eclair.netlify.app/
 
 ## Ressources
 
