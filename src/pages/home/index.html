@@ -15,17 +15,18 @@
   <title>Agence éclair</title>
 </head>
 
-<body class="overflow-x-hidden font-verdana">
+<body class="overflow-x-hidden font-verdana min-w-full text-xs">
   <div class="min-h-screen">
+    <!-- bloc 1 -->
     <header class="bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400 lg:py-2">
       <nav class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
         <a href="https://agence-eclair.netlify.app/">
           <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
             class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0 lg:pl-4" />
         </a>
-        <div class="z-30 sm:w-full sm:h-20 relative left-4 top-6 sm:block md:hidden lg:hidden xl:hidden cursor-pointer"
+        <div class=" z-30 sm:w-full pt-5 pl-4 sm:h-20 sm:block md:hidden lg:hidden xl:hidden cursor-pointer"
           role="button">
-          <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px" class="w-10 block"
+          <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px" class="w-10 inline-block"
             id="menu" />
         </div>
         <div class="hidden md:block lg:col-start-2 lg:col-end-4 " id="liste">
@@ -51,6 +52,7 @@
         </div>
       </nav>
     </header>
+    <!-- bloc 2 -->
     <div
       class="flex flex-col md:grid md:grid-cols-2 text-white bg-gradient-to-b from-indigo-300 via-purple-500 to-pink-100">
       <div
@@ -282,5 +284,4 @@
     </div>
   </footer>
 </body>
-
 </html>
