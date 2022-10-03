@@ -6,16 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../assets/css/output.css" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+
   <title>Agence éclair</title>
 </head>
 
 <body class="overflow-x-hidden font-verdana">
   <div class="min-h-screen">
-    <header class="bg-gradient-to-b from-gray-600 via-gray-500 to-gray-400">
+    <header class="bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400 lg:py-2">
       <nav class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
         <a href="https://agence-eclair.netlify.app/">
           <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
-            class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0" />
+            class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0 lg:pl-4" />
         </a>
         <div class="z-30 sm:w-full sm:h-20 relative left-4 top-6 sm:block md:hidden lg:hidden xl:hidden cursor-pointer"
           role="button">
@@ -33,7 +39,7 @@
               <a class="no-underline line" href="#">Services</a>
             </li>
             <li class="li-nav">
-              <a class="no-underline line " href="#réalisation">nos réalisations</a>
+              <a class="no-underline line " href="#réalisation">nos realisations</a>
             </li>
             <li class="sm:py-4 md:p-0 li-nav">
               <a class="no-underline line" href="#">boutique</a>
@@ -97,36 +103,37 @@
         </div>
       </div>
     </section>
+    <!------------ Nos prestations ---------->
     <section>
       <div class="flex justify-center pt-6">
         <h2
-          class="font-bold text-gray-500 lg:text-gray-600 lg:text-2xl md:text-gray-700 md:font-bold py-2 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
+          class="font-bold text-gray-500 lg:text-gray-600 lg:text-2xl md:text-gray-700 md:font-bold py-4 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
           Nos prestations
         </h2>
       </div>
       <div class="sm:flex sm:flex-col lg:flex-col xl:flex-col items-center m-0 md:mt-4">
         <div
           class="md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 mt-12 w-4/5 md:w-full lg:w-10/12">
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4 ">
             <img src="./assets/img/site-web.png" alt="site-web" width="60px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs">
               Création Site Internet
             </p>
-            <div class="p-4">
-              <span class="text-sm block"><b>.</b> Site Vitrine</span>
-              <span class="text-sm block"><b>.</b> Site E-commerce</span>
-              <span class="text-sm block"><b>.</b> Site Sur-mesure</span>
+            <div class="p-4 italic">
+              <span class="text-sm block" >Site Vitrine</span>
+              <span class="text-sm block py-2"> Site E-commerce</span>
+              <span class="text-sm block"> Site Sur-mesure</span>
             </div>
           </div>
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-4 md:p-4 md:m-0">
-            <img src="./assets/img/apk-phon.png" alt="apk-phon" width="60px" height="auto" />
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 md:mx-2 my-4 md:p-4 md:m-0 lg:mx-2">
+            <img src="./assets/img/apk-phon.png" alt="apk-phon" width="60px" height="auto" class="py-4 md:p-0"/>
             <p class="py-2 text-gray-900 font-bold md:text-xs capitalize">
               Création Application Mobile
             </p>
-            <div class="p-4">
-              <span class="text-sm block"><b>.</b> Android</span>
-              <span class="text-sm block"><b>.</b> Apple</span>
-              <span class="text-sm block"><b>.</b> Inteligence Artificielle</span>
+            <div class="p-4 italic">
+              <span class="text-sm block"> Android</span>
+              <span class="text-sm block py-2"> Apple</span>
+              <span class="text-sm block"> Inteligence Artificielle</span>
             </div>
           </div>
           <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
@@ -134,39 +141,39 @@
             <p class="py-2 text-gray-900 font-bold md:text-xs capitalize">
               graphisme / design
             </p>
-            <div class="p-4">
-              <span class="text-sm block"><b>.</b> carte de visite / Flyer</span>
-              <span class="text-sm block"><b>.</b> Logo</span>
-              <span class="text-sm block"><b>.</b> Plaquette commerciale</span>
+            <div class="p-4 italic">
+              <span class="text-sm block"> Carte de visite / Flyer</span>
+              <span class="text-sm block py-2"> Logo</span>
+              <span class="text-sm block"> Plaquette commerciale</span>
             </div>
           </div>
         </div>
         <div
-          class="md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 my-4 md:mt-12 w-4/5 md:w-full lg:w-10/12">
+          class="md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 my-4 md:mt-12 w-4/5 md:w-full lg:w-10/12 ">
           <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
             <img src="./assets/img/sort-flash.svg" alt="sort-flash" width="50px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs xl:m-0">
               Référencement Naturel SEO
             </p>
-            <div class="p-4">
-              <span class="text-sm block"><b>.</b> Audit de votre site</span>
-              <span class="text-sm block"><b>.</b> Optimisation du code et des balises</span>
-              <span class="text-sm block"><b>.</b> Rédaction de contenu</span>
-              <span class="text-sm block"><b>.</b> Création Backlinks de qualité</span>
-              <span class="text-sm block"><b>.</b> Reporting</span>
+            <div class="p-4 italic">
+              <span class="text-sm block"> Audit de votre site</span>
+              <span class="text-sm block py-2"> Optimisation du code et des balises</span>
+              <span class="text-sm block"> Rédaction de contenu</span>
+              <span class="text-sm block py-2"> Création Backlinks de qualité</span>
+              <span class="text-sm block"> Reporting</span>
             </div>
           </div>
           <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-4 md:my-0">
-            <img src="./assets/img/dollar.svg" alt="sort-flash" width="50px" height="auto" />
+            <img src="./assets/img/dollar.svg" alt="sort-flash" width="50px" height="auto" class="py-4 md:py-0"/>
             <p class="text-gray-900 font-bold md:text-xs lg:-mt-4 md:-mb-4">
               Référencement Payant SEA
             </p>
-            <div class="p-4">
-              <span class="text-sm block"><b>.</b> Création des campagnes Google / Bing</span>
-              <span class="text-sm block"><b>.</b> Optimisation du cout par clic</span>
-              <span class="text-sm block"><b>.</b> Rédaction d'annonce pertinente</span>
-              <span class="text-sm block"><b>.</b> Analyse du retour sur investissement</span>
-              <span class="text-sm block"><b>.</b> Reporting</span>
+            <div class="p-4 italic">
+              <span class="text-sm block"> Création des campagnes Google / Bing</span>
+              <span class="text-sm block py-2"> Optimisation du cout par clic</span>
+              <span class="text-sm block"> Rédaction d'annonce pertinente</span>
+              <span class="text-sm block py-2"> Analyse du retour sur investissement</span>
+              <span class="text-sm block"> Reporting</span>
             </div>
           </div>
           <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
@@ -174,12 +181,12 @@
             <p class="py-2 text-gray-900 font-bold md:text-xs">
               Campagne E-mailing
             </p>
-            <div class="p-4 lg:">
-              <span class="text-sm block"><b>.</b> Récupération d'adresse e-mail cible</span>
-              <span class="text-sm block"><b>.</b> Création du design de la newsletter</span>
-              <span class="text-sm block"><b>.</b> Rédaction du contenu</span>
-              <span class="text-sm block"><b>.</b> Envoi de la campagne</span>
-              <span class="text-sm block"><b>.</b> Statistique taux d'ouverture</span>
+            <div class="p-4 italic">
+              <span class="text-sm block"> Récupération d'adresse e-mail cible</span>
+              <span class="text-sm block py-2"> Création du design de la newsletter</span>
+              <span class="text-sm block"> Rédaction du contenu</span>
+              <span class="text-sm block py-2"> Envoi de la campagne</span>
+              <span class="text-sm block"> Statistique taux d'ouverture</span>
             </div>
           </div>
         </div>
@@ -189,8 +196,8 @@
       <div class="flex flex-col justify-center items-center py-12">
         <h2
           id="réalisation"
-          class="font-bold text-gray-500 md:text-gray-700 md:font-bold lg:text-gray-600 lg:text-2xl py-2 px-2 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
-          nos dernieres réalisations
+          class="font-bold text-gray-500 md:text-gray-700 md:font-bold lg:text-gray-600 lg:text-2xl py-4 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
+          nos dernieres realisations
         </h2>
         <p class="text-xl py-4 text-gray-600 ">
           Vos projets nous tiens à coeur !
@@ -246,7 +253,7 @@
             <a href="#" class="no-underline text-lg capitalize">support</a>
           </li>
           <li>
-            <a href="https://main--agence-eclair.netlify.app/contact" class="no-underline text-lg capitalize">contact</a>
+            <a href="https://agence-eclair.netlify.app/contact" class="no-underline text-lg capitalize">contact</a>
           </li>
         </ol>
       </div>

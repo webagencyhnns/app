@@ -19,6 +19,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* --------- underline ----------- */
 
 .line::after {
