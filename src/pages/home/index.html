@@ -16,20 +16,21 @@
   <div class="min-h-screen w-full">
     <!-- bloc 1 -->
     <header class="bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400 w-full lg:py-2 relative">
-
-      <div class="md:hidden flex justify-center">
-        <!-- <img src="./assets/img/Lo.svg" alt="" class="w-3/12 h-auto absolute "> -->
-      </div>
-      <nav class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
-        <a href="https://agence-eclair.netlify.app/">
-          <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
-            class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0 lg:pl-4" />
-        </a>
+      <nav class="w-full h-auto z-10 grid grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
         <div class=" sm:w-full pt-5 pl-4 sm:h-20 sm:block md:hidden lg:hidden xl:hidden cursor-pointer" role="button">
           <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px"
             class="w-10 inline-block" id="menu" />
         </div>
-        <div class="hidden w-full md:block lg:col-start-2 lg:col-end-4 " id="liste">
+        <div class="md:hidden flex justify-center col-span-2">
+          <img src="./assets/img/Lo.svg" alt="" class="w-3/12 h-auto absolute ">
+        </div>
+        <div class="hidden md:flex">
+          <a href="https://agence-eclair.netlify.app/">
+            <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
+              class="md:w-3/5 md:my-0 md:mx-auto lg:ml-0 lg:pl-4" />
+          </a>
+        </div>
+        <div class="hidden w-full col-span-full md:block lg:col-start-2 lg:col-end-4 " id="liste">
           <ul
             class="list-none uppercase text-white z-20 w-full sm:flex sm:flex-col sm:items-center sm:h-auto md:flex md:flex-row md:justify-evenly md:items-center md:p-4 md:text-xs lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0">
             <div class="sm:w-full sm:border-b-2 sm:mb-4 md:hidden lg:hidden xl:hidden"></div>
@@ -37,13 +38,13 @@
               <a class="no-underline line" href="https://agence-eclair.netlify.app/">Accueil</a>
             </li>
             <li class="sm:py-4 li-nav">
-              <a class="no-underline line" href="#">Services</a>
+              <a class="no-underline line py-4" href="#">Services</a>
             </li>
             <li class="li-nav">
               <a class="no-underline line " href="#réalisation">nos realisations</a>
             </li>
             <li class="sm:py-4 md:p-0 li-nav">
-              <a class="no-underline line" href="#">boutique</a>
+              <a class="no-underline line py-4" href="#">boutique</a>
             </li>
             <li class="sm:pb-4 md:p-0 li-nav">
               <a class="no-underline line" href="https://agence-eclair.netlify.app/contact">contact</a>
@@ -58,18 +59,20 @@
       class="flex flex-col md:grid md:grid-cols-2 text-white bg-gradient-to-b from-indigo-300 via-purple-500 to-pink-100">
       <div
         class="sm:flex sm:flex-col sm:items-center lg:flex lg:flex-col lg:justify-center lg:items-start lg:pl-24 xl:flex xl:flex-col xl:justify-center xl:items-start xl:pl-24">
-        <h3
-          class="uppercase text-violet-700 font-bold sm:text-xl sm:py-4 md:text-2xl md:py-4 md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">
-          votre partenaire digital
-        </h3>
-        <h1 class=" rounded-md sm:text-lg md:text-2xl md:p-4 lg:text-3xl xl:text-3xl">
-          Agence web et communication digitale
+        <h1
+          class="uppercase text-center text-violet-700 font-bold sm:text-xl sm:px-4 sm:py-10 md:text-2xl md:py-4 md:p-4 lg:text-2xl lg:py-4 xl:text-2xl xl:py-4">
+          Agence éclair, votre partenaire digital communication digitale
         </h1>
-        <p class="uppercase sm:px-8 md:p-4 text-lg py-8">
-          Experts en communication digitale, nous prenons en main l’ensemble de
-          vos besoins web, de la création de votre site Internet, à la
-          conception de votre stratégie digitale d’acquisition.
-        </p>
+        <div>
+          <h1 class="rounded-md sm:text-lg sm:px-4 md:text-2xl md:p-4 lg:text-3xl xl:text-3xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+          <p class="uppercase sm:px-8 md:p-4 text-lg py-8">
+            Experts en communication digitale, nous prenons en main l’ensemble de
+            vos besoins web, de la création de votre site Internet, à la
+            conception de votre stratégie digitale d’acquisition.
+          </p>
+        </div>
         <!-- <button type="submit" class="text-lg md:text-2xl btn-envoyer mt-4">
           Envoyer
         </button> -->
@@ -84,12 +87,14 @@
     </div>
     <section class="bg-slate-200">
       <div
-        class="sm:flex sm:flex-col sm:justify-center sm:items-center  md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8"
+        class="py-12 sm:flex sm:flex-col sm:justify-center sm:items-center  md:flex md:flex-col md:items-center md:py-8 lg:flex lg:flex-col lg:items-center lg:py-8 xl:flex xl:flex-col xl:items-center xl:py-8"
         data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50"
         data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
         data-aos-anchor-placement="top-center">
-        <h2 class="capitalize text-4xl py-4 font-black sm:text-2xl sm:p-4">développement web</h2>
-        <p class="text-lg sm:p-4">
+        <hr>
+        <h2 class="uppercase text-4xl font-black px-1 pb-4 sm:text-2xl">developpement web</h2>
+        <hr class="border border-red-500 w-3/5 md:w-2/6 lg:w-3/12">
+        <p class="text-lg pt-8 px-4">
           Création de sites vitrines, sites marchands & d’applications web
           progressives
         </p>
@@ -110,8 +115,8 @@
             pleinement au référencement naturel de votre site (SEO).
           </p>
         </div>
-        <div class="sm:p-4 lg:my-8 xl:my-8">
-          <img src="./assets/img/site-sur-ordi.png" alt="site web sur ordi" />
+        <div class="flex justify-center py-8 lg:my-8 xl:my-8">
+          <img src="./assets/img/site-sur-ordi.png" alt="site web sur ordi" class="w-60 lg:w-80" />
         </div>
       </div>
     </section>
@@ -121,17 +126,21 @@
         data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
         <h2
-          class="font-bold text-gray-500 lg:text-gray-600 lg:text-2xl md:text-gray-700 md:font-bold py-4 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
+          class="font-bold text-sm text-gray-700 lg:text-gray-600 lg:text-2xl md:text-gray-700 md:font-bold py-4 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
           Nos prestations
         </h2>
       </div>
+      <div class="flex justify-center pt-4 ">
+
+        <hr class="border border-red-500 w-2/5 md:w-2/12 lg:w-3/12">
+      </div>
       <div class="sm:flex sm:flex-col lg:flex-col xl:flex-col items-center m-0 md:mt-4">
         <div
-          class="md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 mt-12 w-4/5 md:w-full lg:w-10/12"
-          data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50"
+          class="md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 mt-4 w-4/5 md:w-full lg:w-10/12"
+          data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50"
           data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
           data-aos-anchor-placement="top-center">
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4 ">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4 my-16">
             <img src="./assets/img/site-web.png" alt="site-web" width="60px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs">
               Création Site Internet
@@ -143,7 +152,7 @@
             </div>
           </div>
           <div
-            class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 md:mx-2 my-4 md:p-4 md:m-0 lg:mx-2">
+            class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-16 md:p-4  lg:mx-2">
             <img src="./assets/img/apk-phon.png" alt="apk-phon" width="60px" height="auto" class="py-4 md:p-0" />
             <p class="py-2 text-gray-900 font-bold md:text-xs capitalize">
               Création Application Mobile
@@ -154,7 +163,7 @@
               <span class="text-sm block"> Inteligence Artificielle</span>
             </div>
           </div>
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4 md:my-16">
             <img src="./assets/img/graphsime.png" alt="graphsime" width="60px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs capitalize">
               graphisme / design
@@ -171,7 +180,7 @@
           data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50"
           data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
           data-aos-anchor-placement="top-center">
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4 my-16">
             <img src="./assets/img/sort-flash.svg" alt="sort-flash" width="50px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs xl:m-0">
               Référencement Naturel SEO
@@ -184,7 +193,7 @@
               <span class="text-sm block"> Reporting</span>
             </div>
           </div>
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-4 md:my-0">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-4 md:my-16">
             <img src="./assets/img/dollar.svg" alt="sort-flash" width="50px" height="auto" class="py-4 md:py-0" />
             <p class="text-gray-900 font-bold md:text-xs lg:-mt-4 md:-mb-4">
               Référencement Payant SEA
@@ -197,7 +206,7 @@
               <span class="text-sm block"> Reporting</span>
             </div>
           </div>
-          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 p-4">
+          <div class="grid place-items-center bg-slate-200 shadow-lg rounded-lg mx-2 my-16 p-4">
             <img src="./assets/img/envelope.svg" alt="sort-flash" width="50px" height="auto" />
             <p class="py-2 text-gray-900 font-bold md:text-xs">
               Campagne E-mailing
@@ -214,16 +223,18 @@
       </div>
     </section>
     <section class="bg-white-10">
-      <div class="flex flex-col justify-center items-center py-12" data-aos="zoom-in"
+      <div class="flex flex-col justify-center items-center pb-12" data-aos="zoom-in"
         data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
         data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
         data-aos-anchor-placement="top-center">
         <h2 id="réalisation"
-          class="font-bold text-gray-500 md:text-gray-700 md:font-bold lg:text-gray-600 lg:text-2xl py-4 px-4 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
+          class="font-bold text-sm text-gray-700 md:text-gray-700 md:font-bold lg:text-gray-600 lg:text-2xl py-4 px-2 lg:font-bold uppercase inline-block bg-slate-200 shadow-lg rounded-lg">
           nos dernieres realisations
         </h2>
-        <p class="text-xl py-4 text-gray-600 ">
-          Vos projets nous tiens à coeur !
+        <hr class="border mt-4 border-red-500 w-3/5 md:w-3/12 lg:w-5/12 xl:w-3/12">
+
+        <p class="text-xl text-center py-8 mx-8 text-gray-600 ">
+          Vos projets nous tiennent à coeur !
         </p>
       </div>
       <div
@@ -234,12 +245,12 @@
         <img src="../../assets/img/agence-de-voyage.jpg" alt="agence-de-voyage" width="300px"
           class="rounded-lg h-52 shadow-xl md:justify-self-end cursor-pointer" />
         <img src="../../assets/img/voiture.jpg" alt="location-voiture" width="300px"
-          class="rounded-lg h-52 shadow-xl cursor-pointer my-4 md:-0" />
+          class="rounded-lg h-52 shadow-xl cursor-pointer my-16 md:-0" />
 
         <img src="../../assets/img/boulangerie.jpg" alt="boulangerie" width="300px"
           class="rounded-lg h-52 shadow-xl md:justify-self-end cursor-pointer lg:m-0" />
         <img src="../../assets/img/musee.jpg" alt="musee" width="300px"
-          class="rounded-lg h-52 shadow-xl cursor-pointer lg:m-0 my-4" />
+          class="rounded-lg h-52 shadow-xl cursor-pointer lg:m-0 my-16" />
       </div>
     </section>
   </div>
