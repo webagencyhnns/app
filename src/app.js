@@ -9,9 +9,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 const menu = document.getElementById("menu");
 const liste = document.getElementById('liste');
+const header = document.getElementById('header')
 menu.addEventListener("click", () => {
     liste.classList.toggle('hidden');
-   
+//    header.classList.add("full")
     // p.classList.toggle('color');
 })
 

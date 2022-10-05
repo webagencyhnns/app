@@ -10,81 +10,150 @@
   <title>Contact</title>
 </head>
 
-<body class="font-verdana bg-slate-100 overflow-x-hidden w-full max-h-screen" data-aos="zoom-in"
+<body class="font-verdana bg-slate-100 overflow-x-hidden min-w-full" data-aos="zoom-in"
   data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
   data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
-  <header class="bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400"
-  data-aos="fade-down"
-  data-aos-offset="200"
-  data-aos-delay="50"
-  data-aos-duration="1000"
-  data-aos-easing="ease-in-out"
-  data-aos-mirror="true"
-  data-aos-once="false"
-  data-aos-anchor-placement="top-center">
-    <nav class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
-      <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
-        class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0" />
+  <div class="min-h-screen w-full">
 
-      <div class="z-30 sm:w-full sm:h-20 relative left-4 top-6 sm:block md:hidden lg:hidden xl:hidden cursor-pointe"
-        role="button">
-        <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px" class="w-10 block"
-          id="menu" />
-      </div>
-      <div class="lg:col-start-2 lg:col-end-4 md:block" id="liste">
-        <ul
-          class="sm:flex sm:flex-col sm:items-center z-20 sm:h-auto md:flex md:flex-row md:justify-evenly md:items-center md:p-4 md:text-xs lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0 list-none uppercase text-white">
-          <div class="sm:w-full sm:border-b-2 sm:mb-4 md:hidden lg:hidden xl:hidden"></div>
-          <li class="li-nav">
-            <a class="no-underline line" href="https://agence-eclair.netlify.app/">Accueil</a>
-          </li>
-          <li class="sm:py-4 li-nav">
-            <a class="no-underline line" href="#">Services</a>
-          </li>
-          <li class="li-nav">
-            <a class="no-underline line" href="#">nos réalisations</a>
-          </li>
-          <li class="sm:py-4 md:p-0 li-nav">
-            <a class="no-underline line" href="#">boutique</a>
-          </li>
-          <li class="sm:pb-4 md:p-0 li-nav">
-            <a class="no-underline line" href="#">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <h2 class="text-gray-600 font-normal py-16 text-center sm:text-2xl md:text-4xl">
-    <strong>Rentrons</strong> en contact
-  </h2>
-  <div class="flex flex-col justify-center items-center">
-    <form class="w-2/3">
-      <div class="relative mb-11">
-        <label for="prenom" class="text-gray-500 text-xl">Entrez votre prénom</label>
-        <input type="text" placeholder="Prénom" required id="prenom"
-          class="text-gray-300 block w-full py-3  outline-none bg-none border-b-2 bg-slate-100  text-lg" />
-      </div>
-      <div class="relative mb-11">
-        <label for="nom" class="text-gray-500 text-xl">Entrez votre nom</label>
-        <input type="text" placeholder="Nom" required id="nom"
-          class="text-gray-100 block w-full py-3  outline-none bg-none border-b-2 bg-slate-100 text-lg" />
-      </div>
-      <div class="relative mb-11">
-        <label for="mail" class="text-gray-500 text-xl">Entrez votre mail</label>
-        <input type="email" name="" id="mail" placeholder="Votre adresse mail"
-          class="block w-full py-3  outline-none bg-color-none text-lg bg-none border-b-2 bg-slate-100 text-gray-50" />
-      </div>
-      <div class="relative mb-11">
-        <textarea id="txt" placeholder="Votre message" required
-          class="w-full h-48 bg-none border-b-2 bg-slate-300 rounded-md p-2 resize-none outline-none text-xl"></textarea>
-      </div>
-      <div class="relative mb-12">
-        <button type="submit" class="text-lg md:text-2xl btn-envoyer">
-          Envoyer
-        </button>
-      </div>
-    </form>
+    <header class="bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400"
+    data-aos="fade-down"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+      <nav class="w-full h-auto z-10 lg:grid lg:grid-cols-3 lg:items-center xl:grid xl:grid-cols-2 xl:items-center">
+        <img src="./assets/img/Logo-eclair.png" alt="logo agence éclair"
+          class="sm:hidden md:block md:w-1/5 md:my-0 md:mx-auto lg:ml-0" />
+  
+        <div class="z-30 sm:w-full sm:h-20 relative left-4 top-6 sm:block md:hidden lg:hidden xl:hidden cursor-pointe"
+          role="button">
+          <img src="./assets/img/icons8-menu.svg" alt="menu hamburger" width="20px" height="40px" class="w-10 block"
+            id="menu" />
+        </div>
+        <div class="lg:col-start-2 lg:col-end-4 md:block" id="liste">
+          <ul
+            class="sm:flex sm:flex-col sm:items-center z-20 sm:h-auto md:flex md:flex-row md:justify-evenly md:items-center md:p-4 md:text-xs lg:p-0 lg:flex lg:flex-row lg:justify-evenly lg:text-lg xl:flex xl:flex-row xl:justify-evenly xl:text-lg xl:p-0 list-none uppercase text-white">
+            <div class="sm:w-full sm:border-b-2 sm:mb-4 md:hidden lg:hidden xl:hidden"></div>
+            <li class="li-nav">
+              <a class="no-underline line" href="https://agence-eclair.netlify.app/">Accueil</a>
+            </li>
+            <li class="sm:py-4 li-nav">
+              <a class="no-underline line" href="#">Services</a>
+            </li>
+            <li class="li-nav">
+              <a class="no-underline line" href="#">nos réalisations</a>
+            </li>
+            <li class="sm:py-4 md:p-0 li-nav">
+              <a class="no-underline line" href="#">boutique</a>
+            </li>
+            <li class="sm:pb-4 md:p-0 li-nav">
+              <a class="no-underline line" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h2 class="text-gray-600 font-normal py-16 text-center sm:text-2xl md:text-4xl">
+      <strong>Rentrons</strong> en contact
+    </h2>
+    <div class="flex flex-col justify-center items-center">
+      <form class="w-2/3">
+        <div class="relative mb-11">
+          <label for="prenom" class="text-gray-500 text-xl">Entrez votre prénom</label>
+          <input type="text" placeholder="Prénom" required id="prenom"
+            class="text-gray-300 block w-full py-3  outline-none bg-none border-b-2 bg-slate-100  text-lg" />
+        </div>
+        <div class="relative mb-11">
+          <label for="nom" class="text-gray-500 text-xl">Entrez votre nom</label>
+          <input type="text" placeholder="Nom" required id="nom"
+            class="text-gray-100 block w-full py-3  outline-none bg-none border-b-2 bg-slate-100 text-lg" />
+        </div>
+        <div class="relative mb-11">
+          <label for="mail" class="text-gray-500 text-xl">Entrez votre mail</label>
+          <input type="email" name="" id="mail" placeholder="Votre adresse mail"
+            class="block w-full py-3  outline-none bg-color-none text-lg bg-none border-b-2 bg-slate-100 text-gray-50" />
+        </div>
+        <div class="relative mb-11">
+          <textarea id="txt" placeholder="Votre message" required
+            class="w-full h-48 bg-none border-b-2 bg-slate-300 rounded-md p-2 resize-none outline-none text-xl"></textarea>
+        </div>
+        <div class="relative mb-12">
+          <button type="submit" class="text-lg md:text-2xl btn-envoyer">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
+  <footer class="w-full bg-gradient-to-t from-purple-600 via-purple-500 to-purple-400" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+  data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+  <div class="md:grid md:grid-cols-3">
+    <div class=" md:flex md:flex-col md:items-center">
+      <div class="pl-4">
+        <h4
+          class="md:text-lg sm:text-lg uppercase pt-2 border-b-2 border-white md:text-white md:border-b-2 md:border-white text-white  pb-2  inline-block ml-2">
+          coordonnées
+        </h4>
+        <div class="py-2 ">
+          <div>
+            <i class="fa-solid fa-phone fa-xl text-white px-2"></i>
+            <span class="text-white text-lg py-2 "> 09 00 00 21 20</span>
+          </div>
+          <div class="pt-2">
+            <i class="fa-solid fa-mobile fa-xl text-white px-2"></i>
+            <span class="text-white text-lg px-2"> 06 01 30 01 00</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:w-1/3 border-b-2 border-t-2 w-4/5 pl-4 md:border-white lg:border-b-2 lg:border-t-2 lg:border-white md:w-4/5 ">
+        <span class="capitalize text-white font-semibold block pt-2">adresse :</span>
+        <span class="text-white block pb-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing. 36484 saint
+          michel</span>
+      </div>
+    </div>
+    <div class="md:justify-self-center md:self-end pt-4 pl-4 md:pt-0 md:pb-2">
+      <ol class="list-none text-white">
+        <li class="">
+          <a href="#" class="no-underline text-lg capitalize " title="Mentions légales">mentions légales</a>
+        </li>
+        <li class="py-2">
+          <a href="#" class="no-underline text-lg capitalize">support</a>
+        </li>
+        <li>
+          <a href="https://agence-eclair.netlify.app/contact" class="no-underline text-lg capitalize">contact</a>
+        </li>
+      </ol>
+    </div>
+
+    <div class="md:justify-self-end md:self-end border-b-2">
+      <div class="flex justify-center py-4 md:pr-4">
+        <a href="#">
+          <i class="fa-brands fa-facebook fa-xl px-4 text-white"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram fa-xl text-white"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube fa-xl px-4 text-white"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter fa-xl text-white"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center py-4 md:flex md:justify-center">
+    <span class="text-yellow-50  ">&copy; 2022 </span>
+    <img src="./assets/img/Logo.png" alt="logo eclair" width="60px" class=" -mt-4" />
+    <span class="text-yellow-50  capitalize">.Tous droits réservés.</span>
+  </div>
+</footer>
 </body>
 
 </html>

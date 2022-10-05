@@ -58,3 +58,6 @@
   background-position: 100%;
   border: 3px solid #fff;
 }
+.w-full {
+  width: 100%;
+}
